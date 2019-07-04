@@ -1,204 +1,288 @@
 *{
     margin: 0px;
-    padding: 0px;
-}
+    padding: 0px;}
 
-#backgroundimage{
-    background: url(images/fonddepage.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+body{
+    overflow-x: hidden;
 }
-
-h1{
-    font-family: 'Special Elite', cursive;
-    color: black;
-    font-size: 7.5em;
-    margin-left: 20%;
-}
-
 .logo{
-    width: 14%;
-    margin-top: 7px;
-}
+    width: 8%;
+    height: 6%;
+    animation: rotating 7s infinite;}
+
+    @keyframes rotating {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+header{
+    background: url(images/dark_brick_wall.png);
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    -webkit-text-stroke: 4px orange;}
 
 .navdebut{
-    font-family: 'Special Elite', cursive;
-   display: flex;
-   justify-content: space-around;
-   border-right: none;
-   border-left: none;
-   margin-top: 10px;
-}
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    margin-bottom: 20px;}
 
-.nav_haut{
-    padding: 10px;
-    color: black;
-    font-size: 1.500em;
+.a_haut{
+    background: url(images/dark_brick_wall.png);
+    margin-top: 20px;
+    border: 1px orange solid;
+    border-radius: 20%;
+    padding: 6px;
     text-decoration: none;
-    border: 3px black solid;
-    border-left: none;
-    border-right: none;
-    border-radius: 30px;
-    background-color: whitesmoke;
-}
-
-#page{
-    border: 5px black double;
-    border-top: none;
-    border-bottom: none;
-    padding: 20px;
-    margin: auto;
-    width: 75%;
-    margin-top: 35px;
-    background-color: whitesmoke;
     color: black;
-}
+    -webkit-text-stroke: 1px orange;
+    font-family: 'Black Ops One', cursive;}
 
-h2{
-    font-size: 30px;
-    font-family: 'Special Elite', cursive;
-}
+.container{
+    background: url(images/vintage-concrete.png);
+    background-attachment: fixed;}
 
-#separation{
-    border: 2px black solid;
-    border-radius: 10px;
+main{
+    background: url(images/dark_brick_wall.png);
+    border: 1px orange solid;
+    color: white;
+    border-radius: 5px;
     width: 80%;
     margin: auto;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding: 20px;}
+
+.contexte__darkrp{
+    padding: 15px;
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    
 }
 
-#info{
-    color: white;
-    display: flex;
+.separation{
+    border: 3px orange solid;
+    border-radius: 10px;
     width: 85%;
     margin: auto;
-    margin-top: 35px;
-}
+    margin-top: 25px;
+    margin-bottom: 25px;}
 
-h3{
-    font-family: 'Special Elite', cursive;
-}
+.contexte__poudlard{
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-size: 25px;
+      font-family: 'Special Elite', cursive;
+      margin-left: 20px;}
+
+.mappoudlard{
+    border-radius: 5px;
+    width: 40%;
+    margin-right: 15px;
+    float: left;}
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;}
+
+.logobas_darkrp{ width: 30%;}
 
 .darkrp{
-    display: flex;
-    border: 3px black solid;
-    border-top: none;
-    border-bottom: none;
-    border-radius: 50px;
+    border: 5px orange solid;
     background-color: whitesmoke;
-    color: black;
-    margin-right: 40px;
-    padding: 10px;
+    border-radius: 1%;
+    font-size: 30px;
+    padding: 35px;
 }
 
-.logobas_darkrp{
-      width: 40%;
-}
+.logobas_poudlard{ width: 30%;}
 
 .poudlardrp{
-   display: flex;
-   border: 3px black solid;
-   border-top: none;
-   border-bottom: none;
-   border-radius: 50px;;
-   background-color: whitesmoke;
-   color: black;
-   padding: 10px;
-   margin-left: 40px;
-}
-
-.logobas_poudlard{
-    width: 40%;
+    border: 5px orange solid;
+    background-color: whitesmoke;
+    border-radius: 1%;
+    font-size: 30px;
+    padding: 35px;
 }
 
 footer{
-    color: white;
+    margin-top: 20%;
+    font-size: 32px;
     background-color: black;
-    margin-top: 15px;
-    padding: 15px;
-}
+    color: white;}
 
-@media screen and (min-width: 360px) and (max-width: 710px){
-    *{
-        margin: 0px;
-        padding: 0px;
+    #maindarkrp {
+        position: relative;
+        height: 200px;
+        text-align: justify;
+        font-family: 'Black Ops One', cursive;
+        width: 200px;
+        font-size: 22px;
     }
     
-    h1{
-        font-size: 2.2em;
-    }
-
-    .navdebut{
-       display: flex;
-       justify-content: space-between;
-       border-right: none;
-       border-left: none;
-    }
-
-    .nav_haut{
-        font-size: 0.5em;
-    }
-
-    #info{
-        font-size: 10px;
-        width: 100%;
-        display: block;
-    }
-
-    .logobas_darkrp{
-        width: 35%;
-  }
-
-  .poudlardrp{
-      margin-left: 0px;
-      margin-top: 5px;
-  }
-  
-  .logobas_poudlard{
-    width: 22%;
-}
-    
-}
-
-@media screen and (min-width: 740px) and (max-width:1075px){
-    *{
-        margin: 0px;
-        padding: 0px;
+    #maindarkrp .topleft {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-right: none;
+        border-bottom: none;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 0px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: top left;
+        
     }
     
-    h1{
-        font-size: 4em;
-    }
-
-    .navdebut{
-       display: flex;
-       justify-content: space-between;
-       border-right: none;
-       border-left: none;
-    }
-
-    .nav_haut{
-        font-size: 1em;
-    }
-
-    #info{
-        font-size: 16px;
-        width: 100%;
-        display: block;
-    }
-
-    .logobas_darkrp{
-        width: 22%;
-  }
-
-  .poudlardrp{
-      margin-left: 0px;
-      margin-top: 5px;
-  }
-  
-  .logobas_poudlard{
-    width: 18%;
-}
+    div#maindarkrp .topright {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-left: none;
+        border-bottom: none;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 200px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: top right;}
     
-}
+    div#maindarkrp .bottomleft {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-right: none;
+        border-top: none;
+        width: 200px;
+        height: 200px;
+        left: 0px;
+        top: 200px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: bottom left;}
+    
+    div#maindarkrp .bottomright {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-left: none;
+        border-top: none;
+        width: 200px;
+        height: 200px;
+        left: 200px;
+        top: 200px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: bottom right;}
+
+    .logo__bottomright{
+        width: 80%;}
+
+    .box{transition: 1s ease; }
+    
+    div#maindarkrp:hover .topleft { transform: rotate(90deg);}
+    div#maindarkrp:hover .topright {transform: rotate(-90deg);}
+    div#maindarkrp:hover .bottomleft {transform: rotate(-90deg);}
+    div#maindarkrp:hover .bottomright{transform: rotate(90deg);}
+
+    .container__info{
+        display: flex;
+        justify-content: space-around;
+        width: 85%;
+        margin-top: 15px;
+    }
+    
+    #mainpoudlard {
+        position: relative;
+        height: 200px;
+        text-align: justify;
+        font-family: 'Black Ops One', cursive;
+        width: 200px;
+        font-size: 22px;}
+    
+    #mainpoudlard .topleft {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-right: none;
+        border-bottom: none;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 0px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: top left;}
+    
+    div#mainpoudlard .topright {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-left: none;
+        border-bottom: none;
+        width: 200px;
+        height: 200px;
+        top: 0px;
+        left: 200px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: top right;}
+    
+    div#mainpoudlard .bottomleft {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-right: none;
+        border-top: none;
+        width: 200px;
+        height: 200px;
+        left: 0px;
+        top: 200px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: bottom left;}
+    
+    div#mainpoudlard .bottomright {
+        display: inline-block;
+        position: absolute;
+        border: 2px orange solid;
+        border-left: none;
+        border-top: none;
+        width: 200px;
+        height: 200px;
+        left: 200px;
+        top: 200px;
+        background: url(images/dark_brick_wall.png);
+        transform-origin: bottom right;}
+
+    .logo__bottomright{width: 80%;}
+
+    .box{ transition: 1s ease;}
+    
+    div#mainpoudlard:hover .topleft {transform: rotate(90deg);}
+    div#mainpoudlard:hover .topright {transform: rotate(-90deg);}
+    div#mainpoudlard:hover .bottomleft {transform: rotate(-90deg);}
+    div#mainpoudlard:hover .bottomright {transform: rotate(90deg);}
+    
+    @media screen and (min-width: 320px) and (max-width: 710px){
+
+        header{ font-size: 25px;}
+
+        .navdebut{font-size: 12px;}
+
+        .mappoudlard{width: 100%;
+                     margin-bottom: 10px;}
+
+       .container__info{
+           display: flex;
+           flex-direction: column;
+       }
+       #maindarkrp{
+           margin-bottom: 72%;
+       }
+
+       footer{
+           margin-top: 67%;
+       }
+                        
+    }

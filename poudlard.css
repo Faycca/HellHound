@@ -1,60 +1,91 @@
 *{
     margin: 0px;
-    padding: 0px;
-}
+    padding: 0px;}
 
-#backgroundimage{
-    background: url(images/fonddepage.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+body{
+    overflow-x: hidden;
 }
-
-h1{
-    font-family: 'Special Elite', cursive;
-    color: black;
-    font-size: 7.5em;
-    margin-left: 20%;
-}
-
 .logo{
-    width: 14%;
-    margin-top: 7px;
-}
+    width: 8%;
+    height: 6%;
+    animation: rotating 7s infinite;}
+
+    @keyframes rotating {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+header{
+    background: url(images/dark_brick_wall.png);
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    -webkit-text-stroke: 4px orange;}
 
 .navdebut{
-    font-family: 'Special Elite', cursive;
-   display: flex;
-   justify-content: space-around;
-   border-right: none;
-   border-left: none;
-   margin-top: 10px;
-}
-
-.navun{
-    padding: 10px;
-    color: black;
-    font-size: 1.500em;
-    text-decoration: none;
-    border: 3px black solid;
-    border-left: none;
-    border-right: none;
-    border-radius: 30px;
-    background-color: whitesmoke;
-}
-#page{
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
-}
-#regle{
-    background-color: whitesmoke;
-    border: 3px black solid;
-    width: 15%;
+    font-size: 28px;
+    margin-bottom: 20px;}
 
-}
+.a_haut{
+    background: url(images/dark_brick_wall.png);
+    margin-top: 20px;
+    border: 1px orange solid;
+    border-radius: 20%;
+    padding: 6px;
+    text-decoration: none;
+    color: black;
+    -webkit-text-stroke: 1px orange;
+    font-family: 'Black Ops One', cursive;}
 
-#metier{
-    background-color: whitesmoke;
-    border: 3px black solid;
-    width: 75%;
-}
+    .container{
+        background: url(images/stardust.png)
+    }
+
+    .page{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .regle{
+        border: 10px orange solid;
+        border-radius: 40px;
+        background: url(images/wood_pattern.png);
+        width: 16%;
+        height: 35%;
+        font-size: 1.2em;
+        padding: 20px;
+    }
+    
+    .metier{
+        border: 10px orange solid;
+        border-radius: 40px;
+        background: url(images/wood_pattern.png);
+        width: 70%;
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 710px){
+
+        @media screen and (min-width: 320px) and (max-width: 710px){
+
+            header{ font-size: 25px;}
+        
+            .navdebut{font-size: 12px;}
+        
+        .page{display: flex;
+            flex-direction: column;}
+        
+            .regle{
+              margin-bottom: 15px;
+            width: 80%;}
+        
+            .metier{margin-left: 20px;}
+        }
